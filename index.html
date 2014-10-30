@@ -1,0 +1,404 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>john-doe Website Template | Home :: w3layouts</title>
+		<link href="./css/bootstrap.css" rel='stylesheet' type='text/css' />
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="./js/jquery.min.js"></script>
+		 <!-- Custom Theme files -->
+		<link href="./css/style.css" rel='stylesheet' type='text/css' />
+   		 <!-- Custom Theme files -->
+   		 <!---- start-smoth-scrolling---->
+		<script type="text/javascript" src="./js/move-top.js"></script>
+		<script type="text/javascript" src="./js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+		 <!---- start-smoth-scrolling---->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		</script>
+		<!----webfonts--->
+		
+		<!---//webfonts--->
+		<!----start-top-nav-script---->
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+		<!----//End-top-nav-script---->
+	</head>
+	<body>
+		<!----- start-header---->
+			<div id="home" class="header">
+					<div class="top-header">
+						<div class="container">
+						<div class="logo">
+							<a href="#"><img src="./images/logo.png" title="Johndeo" /></a>
+						</div>
+						<!----start-top-nav---->
+						 <nav class="top-nav">
+							<ul class="top-nav">
+								<li class="active"><a href="#home" class="scroll">关于我</a><span> </span></li>
+								<li><a href="#work" class="scroll">我的项目</a></li>
+								<li><a href="#contact" class="scroll">联系我</a></li>
+							</ul>
+							<a href="#" id="pull"><img src="./images/nav-icon.png" title="menu" /></a>
+						</nav>
+						<div class="clearfix"> </div>
+						<!----top-header-info--->
+						<div class="top-header-info">
+							<p>
+								Holla,<br/>
+								I'm Sherwin Chen. <br/>
+								IOS开发工程师 On 深圳<br/>
+								主技能: C/C++  Ios/Android Js/Html5.
+								<br/>
+							</p>
+							<a class="contactme" href="#">CONTACT ME</a>
+						</div>
+						<!----//End-header-info--->
+					</div>
+				</div>
+			</div>
+			<!----- //End-header---->
+			<!---- about us ---->
+			<div class="aboutus">
+				<div class="container">
+					<h2>自我介绍<br/>Sherwin.Chen</h2>
+					<span> </span>
+					<div class="col-md-6 aboutus-left">
+						<p>我是一枚标准的软件开发者，2010前一直与C/C++打交道，从而进入了软件开发的行列。2010年未，中国瞬间涌入大量的IOS开发者，而我跟随潮流，加入IOS开发者的行列，开始了对Apple的关注与学习，至今还从事IOS开发工作。</p>
+						<p>不过随着技术经验的增长，App项目的开发减少了，更多的是从事项目的技术研发工作，例如：JS与原生交互、SVG路径导航、SVG对象块事件处理与交互、SIOP4LinPhone的学习与研究。当然IOS的技术更新太快，也没有放弃app的开发，于是一些个人的小产品便随之诞生了，如：全民羽毛球。</p>
+						<p>3年的工作生崖中，</p>
+						<p>&nbsp;</p>
+					</div>
+					<div class="col-md-6 aboutus-right">
+						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+						<a class="aboutus-right-btn" href="#">MY RESUME</a>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			<!---- about us ---->
+			<!---- QUOTE ---->
+			<div class="quote text-center">
+				<div class="container">
+					<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt</p>
+				</div>
+			</div>
+			<!---- //QUOTE ---->
+			<!---- WORKS ---->
+			<div id="work" class="works">
+				<div class="container">
+					<h2>MY<br/>WORKS</h2>
+					<span> </span>
+				</div>
+				<!---- partners ---->
+				<div class="partners">
+					<!----sreen-gallery-cursual---->
+						<div class="sreen-gallery-cursual">
+							 <!-- requried-jsfiles-for owl -->
+							<link href="./css/owl.carousel.css" rel="stylesheet">
+							    <script src="./js/owl.carousel.js"></script>
+							        <script>
+							    $(document).ready(function() {
+							      $("#owl-demo").owlCarousel({
+							        items : 5,
+							        lazyLoad : true,
+							        autoPlay : true,
+							        navigation : true,
+							        navigationText :  false,
+							        pagination : false,
+							      });
+							    });
+							    </script>
+							 <!-- //requried-jsfiles-for owl -->
+							 <!-- start content_slider -->
+							 <div class="container">
+						       <div id="owl-demo" class="owl-carousel">
+					                <div class="item">
+					                	<img class="lazyOwl" data-src="./images/screen1.jpg" alt="screen-name">
+					                	<label>PROJECT TITLE</label>
+					                </div>
+					                <div class="item">
+					                	<img class="lazyOwl" data-src="./images/screen2.jpg" alt="screen-name">
+					                	<label>PROJECT TITLE</label>
+					                </div>
+					                <div class="item">
+					                	<img class="lazyOwl" data-src="./images/screen3.jpg" alt="screen-name">
+					                	<label>PROJECT TITLE</label>
+					                </div>
+					                <div class="item">
+					                	<img class="lazyOwl" data-src="./images/screen4.jpg" alt="screen-name">
+					                	<label>PROJECT TITLE</label>
+					                </div>
+					                <div class="item">
+					                	<img class="lazyOwl" data-src="./images/screen5.jpg" alt="screen-name">
+					                	<label>PROJECT TITLE</label>
+					                </div>
+					                <div class="item">
+					                	<img class="lazyOwl" data-src="./images/screen1.jpg" alt="screen-name">
+					                	<label>PROJECT TITLE</label>
+					                </div>
+					                <div class="item">
+					                	<img class="lazyOwl" data-src="./images/screen2.jpg" alt="screen-name">
+					                	<label>PROJECT TITLE</label>
+					                </div>
+					                <div class="item">
+					                	<img class="lazyOwl" data-src="./images/screen3.jpg" alt="screen-name">
+					                	<label>PROJECT TITLE</label>
+					                </div>
+				              </div>
+							</div>
+						<!--//sreen-gallery-cursual---->
+				</div>
+				<!---- //partners ---->
+				<!----project-grid---->
+				<div class="project-grid">
+					<div class="container">
+					<img class="project-screen" src="./images/screen.jpg" title="name" />
+					<div class="project-grid-info">
+						<div class="col-md-3 project-grid-info-left">
+							<h3>CLIENT:</h3>
+							<label>Some Company</label>
+							<h3>WEBSITE:</h3>
+							<label><a href="#">http://www.somedomain.com</a></label>
+							<a class="sitedemo" href="#">VISIT LIVE SITE</a>
+						</div>
+						<div class="col-md-9 project-grid-info-left">
+							<h3><a href="#">PROJECT TITLE</a></h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  Velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam uptatem.</p>
+							<ul class="project-share unstyled-list list-inline">
+								<li><a class="p-like" href="#"><label> </label> 144 LIKES</a></li>
+								<li><a class="p-share" href="#"><label> </label> SHARE</a></li>
+								<div class="clearfix"> </div>
+							</ul>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					</div>
+				</div>
+				<!----project-grid---->
+			</div>
+			</div>
+			<!---- //WORKS ---->
+			<!---- TESTIMONIAL ---->
+			<div class="testmonials">
+				<div class="container">
+					<h2>WHAT<br/>THEY SAY</h2>
+					<span> </span>
+				<div class="people-testmonials">
+					 <script>
+							    $(document).ready(function() {
+							      $("#owl-demo1").owlCarousel({
+							        items : 1,
+							        lazyLoad : true,
+							        autoPlay : true,
+							        navigation : false,
+							        navigationText :  false,
+							        pagination : true,
+							      });
+							    });
+						</script>
+					<div id="owl-demo1" class="owl-carousel">
+					                <div class="item ">
+					                	<p>" Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. "</p>
+					               		<div class="test-people">
+					               			<div class="test-people-pic">
+					               				<a href="#">
+					               					<img src="./images/test-people-pic.png" title="name" />
+					               				</a>
+					               			</div>
+					               			<div class="test-people-info">
+					               				<a href="#">Lily Barnes</a>
+					               				<small>Managing Director ABC Ltd.</small>
+					               			</div>
+					               			<div class="clearfix"> </div>
+					               		</div>
+									</div>
+									<div class="item ">
+					                	<p>" Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. "</p>
+					               		<div class="test-people">
+					               			<div class="test-people-pic">
+					               				<a href="#">
+					               					<img src="./images/test-people-pic.png" title="name" />
+					               				</a>
+					               			</div>
+					               			<div class="test-people-info">
+					               				<a href="#">Lily Barnes</a>
+					               				<small>Managing Director ABC Ltd.</small>
+					               			</div>
+					               			<div class="clearfix"> </div>
+					               		</div>
+									</div>
+									<div class="item ">
+					                	<p>" Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. "</p>
+					               		<div class="test-people">
+					               			<div class="test-people-pic">
+					               				<a href="#">
+					               					<img src="./images/test-people-pic.png" title="name" />
+					               				</a>
+					               			</div>
+					               			<div class="test-people-info">
+					               				<a href="#">Lily Barnes</a>
+					               				<small>Managing Director ABC Ltd.</small>
+					               			</div>
+					               			<div class="clearfix"> </div>
+					               		</div>
+									</div>
+									<div class="item ">
+					                	<p>" Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. "</p>
+					               		<div class="test-people">
+					               			<div class="test-people-pic">
+					               				<a href="#">
+					               					<img src="./images/test-people-pic.png" title="name" />
+					               				</a>
+					               			</div>
+					               			<div class="test-people-info">
+					               				<a href="#">Lily Barnes</a>
+					               				<small>Managing Director ABC Ltd.</small>
+					               			</div>
+					               			<div class="clearfix"> </div>
+					               		</div>
+									</div>
+									<div class="item ">
+					                	<p>" Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. "</p>
+					               		<div class="test-people">
+					               			<div class="test-people-pic">
+					               				<a href="#">
+					               					<img src="./images/test-people-pic.png" title="name" />
+					               				</a>
+					               			</div>
+					               			<div class="test-people-info">
+					               				<a href="#">Lily Barnes</a>
+					               				<small>Managing Director ABC Ltd.</small>
+					               			</div>
+					               			<div class="clearfix"> </div>
+					               		</div>
+									</div>
+									<div class="item ">
+					                	<p>" Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. "</p>
+					               		<div class="test-people">
+					               			<div class="test-people-pic">
+					               				<a href="#">
+					               					<img src="./images/test-people-pic.png" title="name" />
+					               				</a>
+					               			</div>
+					               			<div class="test-people-info">
+					               				<a href="#">Lily Barnes</a>
+					               				<small>Managing Director ABC Ltd.</small>
+					               			</div>
+					               			<div class="clearfix"> </div>
+					               		</div>
+									</div>
+				    </div>
+				</div>
+			</div>
+			</div>
+			<!---- //TESTIMONIAL ---->
+			<!---- CONTACT ----->
+			<div id="contact" class="contact"> 
+				<div class="container">
+					<h2>WAYS TO<br/>CONTACT ME</h2>
+					<span> </span>
+				<!----contact-grids---->
+				<div class="contact-grids">
+					<div class="col-md-6 contact-left">
+						<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<form>
+							<input type="text" value="Your beautiful name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your beautiful name';}">
+							<input type="text" value="Your email address" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your email address';}">
+							<textarea rows="2" cols="70" onfocus="if(this.value == 'Leave your message') this.value='';" onblur="if(this.value == '') this.value='Leave your message';">Leave your message</textarea>
+							<input type="submit" value="SEND MESSAGE" />
+							<div class="clearfix"> </div>
+						</form>
+						<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div>
+					<div class="col-md-6 contact-right">
+						<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<div class="address">
+							<label>HOLLA@JOHNDOE.DEV</label>
+							<label>+1 (234) 5678901</label>
+							<label>715A CD58</label>
+						</div>
+						<div class="clearfix"> </div>
+						<div class="address">
+							<label>CREATIVE BUILDING 58</label>
+							<label>3083 Romines Mill Road</label>
+							<label>Boston, MA 02201  </label>
+						</div>
+						<div class="clearfix"> </div>
+						<div class="social-share">
+							<h4>ON SOCIAL</h4>
+							<ul class="unstyled-list list-inline">
+								<li><a class="facebook" href="#"><span> </span></a></li>
+								<li><a class="twitter" href="#"><span> </span></a></li>
+								<li><a class="googlepluse" href="#"><span> </span></a></li>
+								<li><a class="dribbble" href="#"><span> </span></a></li>
+								<div class="clearfix"> </div>
+							</ul>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			</div>
+			<!---- CONTACT ----->
+			<!----contact-map---->
+			<div class="contact-map">
+				<iframe src="./sub/map4me.html"></iframe>
+			</div>
+			<!----contact-map---->
+			<div class="copy-right text-center">
+				<div class="container">
+					<p>Template by <a href="http://w3layouts.com/">W3layouts</a></p>
+					<label>Copyright 2014. All rights reserved.</label>
+								<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+								</script>
+									<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	
+				</div>
+			</div>
+	</body>
+</html>
+
